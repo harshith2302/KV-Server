@@ -125,7 +125,7 @@ public:
 
 int main() {
 
-    string db_conn = "host=10.64.154.2 port=5432 dbname=decs user=postgres password=postgres";
+    string db_conn = "host=localhost port=5432 dbname=decs user=postgres password=postgres";
     
     auto db_pool = make_shared<DBPool>(db_conn, 20);
     LRUCache cache(1000); 
